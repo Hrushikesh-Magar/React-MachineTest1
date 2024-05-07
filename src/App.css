@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  background-color: rgb(57, 56, 56);
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+}
+
+
+.container{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  width: 250px;
+  background-color: var(--secondary-color);
+  margin: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.movie .poster{
+  width: 100%;
+  height: 250px;
+}
+.movie-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details .box{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.movie-details .title{
+  width: 160px;
+  font-size: 15px;
+  text-align: center;
+}
+.movie-details .overview{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  background-color: var(--secondary-color);
+  opacity: 0.9;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(101%);
+}
+.movie-details:hover .overview{
+  transform: translateY(0%);
+}
+
+
+
+.pagination {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.pagination-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.page-numbers span {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.page-numbers .active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}
